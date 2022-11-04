@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+   /* margin: 0px;*/
+    background-color:#28012a;
+    /*height: 100vh;*/
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+.seat{
+    background-color: #962e40;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 6px;
+}
+.row{
+   display: flex;
+}
+
+.seat:not(.seat_info):not(.reserved):hover{
+    background-color: #761b52;
+    cursor: pointer;
+    transition: 0.6s;
+    transform: scale(1.1);
+}
+.seat.selected{
+    background-color: #685c79;
+}
+
+.seat.reserved{
+    background-color:#355c7d;
+}
+
+.row:nth-of-type(3){
+    margin-top:20px ;
+}
+.seat:nth-of-type(6){
+    margin-right: 40px;
+}
+
+.screen{
+    height: 150px;
+    width:auto;
+    background-color: rgb(218, 216, 216);;
+    margin-bottom: 45px;
+    margin-top: 10px;
+    box-shadow:  rgba(210, 203, 203, 0.25) 0px 54px 55px, rgba(232, 228, 228, 0.12) 0px -12px 30px, rgba(225, 214, 214, 0.12) 0px 4px 6px, rgba(217, 210, 210, 0.17) 0px 12px 13px, rgba(229, 222, 222, 0.09) 0px -3px 5px;;
+}
+
+.session-list{
+    margin-top: 10px;
+}
+
+.info{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-right: 60px;
+    padding-bottom: 6px;
+    margin-top: 10px;
+}
+.seat_info{
+    margin-left: 70px;
+    margin-top: 20px;
+    
+}
+.seat h4{
+    color: gray;
+    padding-top: 20px;
+}
+
+#x{
+    margin-left: -20px;
+}
+#y{
+    margin-left: -20px;
+}
+#z{
+    margin-left: -8px;
+}
+.text{
+    color: #5684ae;
+    font-size: 22px;
+    padding-top:20px;
+}
+.text span{
+    color: yellowgreen  ;
+}
+/*
+.check h5{
+    margin-top: 3px;
+    color: #5684ae;
+    font-size: 18px;
+    
+}
+.check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn{
+    background-color: yellowgreen;
+    font-size: 20px;
+    border: 2px solid yellowgreen;
+    border-radius: 4px;
+    padding: 3px 10px;
+    margin-bottom: 20px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+*/
